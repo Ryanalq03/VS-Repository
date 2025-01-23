@@ -22,3 +22,22 @@ const productDetails= {
 
 console.log(products); 
 console.log(productDetails);
+
+//Task 3
+let accountBalance= 10000;
+
+accountBalance += 500; 
+console.log(accountBalance); //10500
+
+accountBalance -= 100;
+console.log(accountBalance); //10400
+
+accountBalance *= 1.05;
+console.log(accountBalance); //10920
+
+accountBalance /= 2;
+console.log(accountBalance); //5460
+
+accountbalance %= 100;
+console.log(accountBalance);//546
+
