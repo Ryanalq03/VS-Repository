@@ -52,3 +52,11 @@ console.log(employeeScore2 <= 90);//true
 console.log(employeeScore1 === 90); //false
 console.log(employeeScore1 !== employeeScore2); //true
 
+
+//Task 5
+let hasKeyCard= true;
+let hasPermission = false;
+
+console.log(hasKeyCard && hasPermission);
+console.log(hasKeyCard || hasPermission);
+console.log(!hasKeyCard);
