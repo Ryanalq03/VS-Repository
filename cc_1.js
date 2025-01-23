@@ -10,3 +10,15 @@ console.log(typeof employeeID); //"number"
 
 console.log(isActive); //true
 console.log(typeof isActive); //"boolean"
+
+
+//Task 2
+let products = ["Camera", "Microphone", "Tablet"];
+const productDetails= {
+    name: "Camera",
+    price: 1000,
+    inStock: true
+};
+
+console.log(products); 
+console.log(productDetails);
