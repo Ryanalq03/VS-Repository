@@ -41,3 +41,14 @@ console.log(accountBalance); //5460
 accountbalance %= 100;
 console.log(accountBalance);//546
 
+//Task 4
+let employeeScore1 = 100;
+let employeeScore2 = 90;
+
+console.log(employeeScore1 > employeeScore2); //true
+console.log(employeeScore1 < employeeScore2); //false
+console.log(employeeScore1 >= 100); //true
+console.log(employeeScore2 <= 90);//true
+console.log(employeeScore1 === 90); //false
+console.log(employeeScore1 !== employeeScore2); //true
+
