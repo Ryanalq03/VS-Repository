@@ -36,3 +36,18 @@ let newCustomer = {
 };
 customers.push(newCustomer);
 console.log("Updated Customer List:", customers);
+
+//Task 5
+let order = {
+    orderId: "2345",
+    customerName: "Shelby Snow",
+    amount: 200,
+    calculateTax: function (){
+        return this.amount * 0.1;
+    },
+};
+console.log("Order Details:");
+console.log("Order ID: , order.orderId");
+console.log("Customer Name:", order.customerName);
+console.log("Order Amount:" , order.amount);
+console.log("Tax Amount:" , order.calculateTax());
