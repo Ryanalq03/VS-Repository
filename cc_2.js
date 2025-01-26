@@ -23,3 +23,16 @@ employee.department = "Marketing";
 employee.position = "Manager";
 console.log("Updated Employee Record:", employee);
 
+//Task 4
+let customers = [
+    {name: "Hiba Alqasemi", email: "Halq@gmail.com", purchaseAmount: 100},
+    {name: "Lama Alqasemi", email: "Lalq@gmail.com", purchaseAmount: 150},
+    {name: "Rama Alqasemi", email: "Ralq@gmail.com", purchaseAmount: 80},
+];
+let newCustomer = {
+    name: "Dana Alqasmei",
+    email: "Dalq@gmail.com",
+    purchaseAmount: 300,
+};
+customers.push(newCustomer);
+console.log("Updated Customer List:", customers);
