@@ -88,3 +88,13 @@ orders.forEach(order =>{
     //Logging each ID to console
     console.log(`Order ID: ${order}`);
 });
+
+//Task 8: Function Delaration 
+
+//Declaring function to calculate tax
+function calculateTax(amount, rate) {
+    return amount * rate
+};
+
+//Log results to console
+console.log(`Tax Amount: $${calculateTax(9000, 0.05)}`);
