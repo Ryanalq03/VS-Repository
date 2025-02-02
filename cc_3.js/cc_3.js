@@ -29,6 +29,24 @@ let total_orders = orders.reduce((total, order) => total + order, 0);
 //Log total orders to console
 console.log("Total Orders:", total_orders);
 
+//Task 3 Employee Performance Tracking
+
+//Declare object with employee details
+let employee = {
+    name: "Joe Shmow",
+    role: "Loiterer",
+    performanceScore: 20,
+    isActive: true
+};
+
+//Updating Score
+employee.performanceScore = 99;
+
+//Adding new Promotion property
+employee.promotionEligible = true;
+
+//Updating Object to console
+console.log("Updated Employee Details:", employee);
 
 
 
