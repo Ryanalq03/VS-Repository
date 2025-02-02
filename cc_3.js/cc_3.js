@@ -67,5 +67,25 @@ feedback.push({
 //Log customer feedback to console
 console.log("Customer Feedback:", feedback);
 
+//Task 5 Inventory Management
+
+//Decalring object with item details
+let inventory = {
+    itemName: "Dog Water",
+    stockCount: 100,
+    price: 1000,
+
+    //method to calculate total value
+    calculateTotalValue: function() {
+        return this.stockCount * this.price;
+    }
+};
+//Logging inventory to console
+console.log("Inventory Details:", inventory);
+
+//Logging total value to console
+console.log("Total Value: $" + inventory.calculateTotalValue());
+
+
 
 
