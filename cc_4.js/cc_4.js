@@ -40,3 +40,15 @@ while (stock > -1) {
     //Decrease stock by 1
     stock--;
 }
+
+//Task 4: DoWhile Loop
+
+//Declaring intial value
+let responses = 0;
+
+//DoWhile Loop that logs each time
+do {
+    responses++;
+    console.log(`Response Count: ${responses}`);
+} while (responses <= 3);
+
