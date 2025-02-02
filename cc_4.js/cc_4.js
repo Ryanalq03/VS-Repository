@@ -77,3 +77,14 @@ for (let product of products) {
     //Logging each product to console
     console.log(`Product: ${product}`);
 };
+
+//Task 7: ForEach Method
+
+//Declaring Array with Order IDs
+orders = [100,200,300];
+
+//ForEach Loop to display IDs
+orders.forEach(order =>{
+    //Logging each ID to console
+    console.log(`Order ID: ${order}`);
+});
