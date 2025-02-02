@@ -108,3 +108,14 @@ function applyDiscount(price, discountRate) {
 
 //Log results to console
 console.log(`Price after Discount: $${applyDiscount(1000, 0.2)}`);
+
+//Task 10: Arrow Functions
+
+//Assign conversion rate
+const conversionRate = 0.1;
+
+//Declare function for loyalty points 
+calculatePoints = (purchaseAmount) => purchaseAmount * conversionRate;
+
+//Log results to console
+console.log(`Loyalty Points Earned: ${calculatePoints(300)}`);
