@@ -66,3 +66,14 @@ for (let property in employee) {
 //logging each to console
 console.log(`${property}: ${employee[property]}`);
 };
+
+//Task 6 ForOf Loop
+
+//Declaring array with product names
+let products = ["Boba", "Coffee", "Tea", "Matcha"];
+
+//Use ForOf Loop
+for (let product of products) {
+    //Logging each product to console
+    console.log(`Product: ${product}`);
+};
