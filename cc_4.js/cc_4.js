@@ -98,3 +98,13 @@ function calculateTax(amount, rate) {
 
 //Log results to console
 console.log(`Tax Amount: $${calculateTax(9000, 0.05)}`);
+
+//Task 9 Function Expressions
+
+//Declaring fuction to apply discounts
+function applyDiscount(price, discountRate) {
+    return price * (1- discountRate)
+};
+
+//Log results to console
+console.log(`Price after Discount: $${applyDiscount(1000, 0.2)}`);
