@@ -10,3 +10,19 @@ if (purchaseAmount > 100) {
 
 //Loged the final amount to console
 console.log(`Final amount after discount: $${finalAmount}`);
+
+//Task 2: For Loop
+
+//Declaring Array with 5 Figures
+let sales = [100,200,300,400,500];
+
+//Declare totalsales variable
+totalSales= 0;
+
+//For loop for total sales
+for (let i = 0; i< sales.length; i++) {
+    totalSales += sales[i];
+}
+
+//Log total sales to console
+console.log(`Total Sales: $${totalSales}`);
