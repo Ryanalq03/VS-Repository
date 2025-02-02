@@ -26,3 +26,17 @@ for (let i = 0; i< sales.length; i++) {
 
 //Log total sales to console
 console.log(`Total Sales: $${totalSales}`);
+
+//Task 3: While Loop
+
+//Declare intial variable
+let stock = 10;
+
+//While loop to decrease value
+while (stock > -1) {
+    //Logging each decrement
+    console.log(`Stock Count: ${stock}`)
+
+    //Decrease stock by 1
+    stock--;
+}
