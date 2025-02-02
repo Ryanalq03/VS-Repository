@@ -52,3 +52,17 @@ do {
     console.log(`Response Count: ${responses}`);
 } while (responses <= 3);
 
+//Task 5 ForIn Loop
+
+//Declaring Object with Employee details
+let employee = {
+    name: "Alice",
+    position: "Manager",
+    salary: 75000
+};
+
+//ForIn loop 
+for (let property in employee) {
+//logging each to console
+console.log(`${property}: ${employee[property]}`);
+};
