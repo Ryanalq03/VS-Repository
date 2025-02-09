@@ -31,3 +31,23 @@ let order = {
 
 //Calling method to display details
 order.displayOrder();
+
+//Task 3 Array Manipulation
+
+//Declaring array with product names
+let cartitems = ["Phone", "Laptop", "Microphone"];
+
+//Adding another item
+cartitems.push("Mouse")
+
+//Removing last item
+cartitems.pop();
+
+//Adding item to beginning
+cartitems.unshift("Keyboard");
+
+//Removing first item
+cartitems.shift();
+
+//Logging final array to console
+console.log("Cart Items:", cartitems);
