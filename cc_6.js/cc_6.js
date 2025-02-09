@@ -59,3 +59,19 @@ function convertCurrency(amount, exchangeRate) {
 convertCurrency(100, 1.1); 
 convertCurrency(250, 0.85);
 
+//Task 6: Discount Strategy
+
+//Function to apply a bulk discount for orders over $500
+let orders = [200, 600, 1200, 450, 800];
+
+//Applying the discount function to each order
+let applyBulkDiscount = (orders, discountFunction) => {
+    let discountedOrders = orders.map(discountFunction);
+
+    //Logging the updated order values to the console
+    console.log(`Expected output: ${discountedOrders}`);
+};
+
+//Applys discount to orders 500+
+applyBulkDiscount(orders, amount => amount > 500 ? amount * 0.9 : amount);
+
