@@ -104,3 +104,12 @@ function calculateTax(amount, taxRate) {
 //Log function output using template literal
 console.log(`Calculated Tax: $${calculateTax(100, 0.15)}`);
 
+//Task 9 Function Expression
+
+//Create function to apply discount using price and discount rate
+function applyDiscount(price, discount) {
+    return price * (1 - discount)
+};
+
+//Log function output to the console
+console.log("Discounted Price: $" + applyDiscount(100, 0.2));
