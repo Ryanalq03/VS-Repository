@@ -80,8 +80,16 @@ console.log("Available Inventory:", availableInventory);
 //Declare array containing sales data
 let sales = [500, 300, 200, 400];
 
-//Calculate total revenue using .reduce() method
+//Calculate total revenue
 let totalRevenue = sales.reduce((total, sale) => total + sale, 0);
 
 //Log total revenue to the console
 console.log("Total Revenue: $" + totalRevenue);
+
+//Task 7 find() method
+
+//Declare array containing customer names
+let customers = ["Alice", "Bob", "Charlie", "David"];
+
+//Locate "Charlie" using .find() method and log result to the console
+console.log(customers.find(customer => customer === "Charlie"));
