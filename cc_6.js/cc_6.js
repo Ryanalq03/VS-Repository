@@ -35,3 +35,15 @@ console.log(`Bonus: $${calculateBonus(7000, "Good")}`);
 
 calculateBonus(5000, "Excellent"); 
 calculateBonus(7000, "Good");
+
+//Task 4: Parameters and Arguments
+
+//Function to calculate reoccuring costs with packages
+function calculateSubscriptionCost(plan, months, discount = 0) {
+    let prices = { "Basic": 10, "Premium": 20, "Enterprise": 50 };
+    let totalCost = (prices[plan] * months) - discount;
+    console.log(`Total Cost: $${totalCost}`);
+}
+
+calculateSubscriptionCost("Basic", 6, 10); 
+calculateSubscriptionCost("Premium", 12, 0);
