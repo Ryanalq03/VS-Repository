@@ -113,3 +113,11 @@ function applyDiscount(price, discount) {
 
 //Log function output to the console
 console.log("Discounted Price: $" + applyDiscount(100, 0.2));
+
+//Task 10: Arrow Function
+
+//Create arrow function to calculate loyalty points earned
+const calculatePoints = purchaseAmount => Math.floor(purchaseAmount/10);
+
+//Log results to the console
+console.log("Loyalty Points Earned:", calculatePoints(189));
