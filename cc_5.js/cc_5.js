@@ -57,8 +57,21 @@ console.log("Cart Items:", cartitems);
 //Decaring items to array
 prices = [100,200,300];
 
-//Apply a 10% discount to each price using .map()
+//Apply a 10% discount to each price
 let discountedPrices = prices.map(price => price * 0.9);
 
 //Log new discounted prices to the console
 console.log("Discounted Prices:", discountedPrices);
+
+//Task 5 Filter Method
+
+//Declaring array with 5 quantities
+
+//Declare array containing five product quantities
+let inventory = [3, 6, 23, 62, 0, 12];
+
+//Remove products with zero stock 
+let availableInventory = inventory.filter(quantity => quantity > 0);
+
+//Log filtered array to the console
+console.log("Available Inventory:", availableInventory);
