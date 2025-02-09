@@ -90,3 +90,15 @@ let tracker = createExpenseTracker();
 tracker(200); 
 tracker(150);
 
+//Task 8 Employee Promotion Evaluation
+
+//Function that calculates # of years until level 10 promotion
+function calculateYearsToPromotion(employeeLevel) {
+    if (employeeLevel >= 10) {
+        return 0;
+    }
+    return 2 + calculateYearsToPromotion(employeeLevel + 1);
+}
+
+console.log(`Years to Level 10: ${calculateYearsToPromotion(7)}`); 
+console.log(`Years to Level 10: ${calculateYearsToPromotion(5)}`);
