@@ -51,3 +51,14 @@ cartitems.shift();
 
 //Logging final array to console
 console.log("Cart Items:", cartitems);
+
+//Task 4 Map Method
+
+//Decaring items to array
+prices = [100,200,300];
+
+//Apply a 10% discount to each price using .map()
+let discountedPrices = prices.map(price => price * 0.9);
+
+//Log new discounted prices to the console
+console.log("Discounted Prices:", discountedPrices);
