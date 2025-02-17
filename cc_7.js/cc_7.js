@@ -121,3 +121,18 @@ let budget = createBudgetTracker()
 
 console.log(budget(300));
 console.log(budget(200));
+
+//Task 8: Recursion in JavaScript
+
+//Recursive function to calculates a projects revenue growth
+function calculateGrowth(years, revenue) {
+    //Stops the recursion after 10 years and returning the projected revenue
+    if (years >= 10) return `Projected revenue: $${revenue.toFixed(2)}`;
+
+    //Increases the revenue by 5% and recursing for the next year
+    return calculateGrowth(years + 1, revenue * 1.05);
+};
+
+//Test Data
+console.log(calculateGrowth(8, 1000)); //Expected output - Projected revenue: $1102.50
+console.log(calculateGrowth(5, 5000)); //Expected output - Projected revenue: $6381.41
