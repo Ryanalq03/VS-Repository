@@ -98,3 +98,20 @@ function filterLargeTransactions(transactions, filterFunction) {
 
 //Test Case
 filterLargeTransactions(transactions, amount => amount > 1000); //Expected output: [1500, 3200, 2500]
+
+//Task 7: Shopping cart tracker
+
+//Function that returns another function to add items to a total
+function createCartTracker() {
+    let totalItems = 0
+    return function(value) {
+        totalItems += value
+        return `Total Cart Value: $${totalItems}`
+    }
+}
+
+// Test Data
+let cart = createCartTracker();
+console.log(cart(20));
+console.log(cart(35));
+
