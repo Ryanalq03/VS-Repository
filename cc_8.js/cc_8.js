@@ -115,3 +115,14 @@ let cart = createCartTracker();
 console.log(cart(20));
 console.log(cart(35));
 
+//Task 8: Saving growth projection
+
+//Recursive function that projects savings growth
+function calculateSavings(years, amount) {
+    if (years >= 10) return amount;
+    return calculateSavings(years + 1, amount * 1.05);
+}
+
+// Test Data
+console.log(calculateSavings(8, 1000));
+console.log(calculateSavings(5, 5000));
