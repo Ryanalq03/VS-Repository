@@ -48,3 +48,27 @@ const calculateLoyaltyDiscount = (amount, years) => {
 //Test Data
 calculateLoyaltyDiscount(100, 6); //Expected output: $85.00
 calculateLoyaltyDiscount(200, 2); //Expected output: $190.00
+
+//Task 4: Parameters and Arguments
+
+//Function that calculates shipping rate based on different variables
+function calculateShippingCost(weight, location, expedited = false) {    
+    let shippingFees = 0;
+    
+    //Determines the shipping cost based on location
+    if (location === "USA") {
+        shippingFees = 5 + (0.5 * weight)}
+    else if (location === "Canada") {
+        shippingFees = 10 + (0.7 * weight)}
+    
+    // Add expedited shipping fee if expedited
+    if (expedited) {
+        shippingFees += 10};
+    
+    // Adding final shipping fee to console
+    console.log(`Shipping Cost: $${shippingFees.toFixed(2)}`)
+}
+
+// Test Data
+calculateShippingCost(10, "USA", true);
+calculateShippingCost(5, "Canada", false);
