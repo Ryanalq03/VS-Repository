@@ -26,3 +26,22 @@ console.log(`Final price: $${finalPrice.toFixed(2)}`);
 //Test Cases
 calculateDiscount(100, 0.2);
 calculateDiscount(250, 0.15);
+
+//Task 3: Service Fee Calculation
+
+//Arrow function that applies different fees
+const calculateServiceFee = (amount, serviceType) => {
+    let feeCost = 0;
+
+    //Determines the fee percentage based on service type
+    if (serviceType === "Premium") {fee = amount * 0.15}
+    else if (serviceType === "Standard") {fee = amount * 0.1}
+    else if (serviceType === "Basic") {fee = amount * 0.05};
+    const fee = amount * feeRate;
+    //Logs the fee to console
+    console.log(`Service Fee: $${fee.toFixed(2)}`)
+}
+
+//Test Data
+calculateServiceFee(200, "Premium");
+calculateServiceFee(500, "Standard");
