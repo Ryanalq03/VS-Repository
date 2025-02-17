@@ -67,3 +67,17 @@ function calculateRentalCost(days, carType, insurance = false) {
 // Test Data
 calculateRentalCost(3, "Economy", true);
 calculateRentalCost(5, "Luxury", false);
+
+//Task 5: Loan Payment Calculation 
+
+//Function that returns the total loan payment 
+function calculateLoanPayment(principal, rate, time) {
+    const totalPayment = principal + (principal * rate * time);
+
+    //Logs the total loan payment to console
+    console.log(`Total payment: $${totalPayment.toFixed(2)}`);
+};
+
+//Test cases - Values can be changed
+calculateLoanPayment(1000, 0.05, 2); //Expected output - Total payment: $1100.00
+calculateLoanPayment(5000, 0.07, 3); //Expected output - Total payment: $6050.00
